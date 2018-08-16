@@ -1,0 +1,65 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">REGISTRAR NUEVO PARTICIPANTE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="formulario">  
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="nombre">Nombre Alumno</label>
+              <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="carnet">Carnet</label>
+              <input type="text" class="form-control" placeholder="Carnet" id="carnet" name="carnet" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="facultad">Facultad</label>
+              <select id="facultad" name="facultad" class="form-control">
+                <option>Ingeniera</option>
+                <option>Arquitectura</option>
+                <option>Derecho</option>
+                <option>Humanidades</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="ciclo">Ciclo</label>
+              <input type="number" class="form-control" id="ciclo" placeholder="ciclo" name="ciclo" min="1" max="10" step="1" required >
+            </div>
+            <div class="form-group col-md-4">
+              <label for="evento">Evento</label>
+              <select id="evento" name="evento" class="form-control">
+                <option>Carrera 5k</option>
+                <option>Carrera 10m</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+          <div class="form-group col-md-4">
+            <label for="categoria">Categoria</label>
+            <select class="form-control" id="categoria" name="categoria">
+              <option>General</option>
+              <option>Libre</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+          <input type="text" id="bandera" name="bandera">
+          <input type="text" id="id" name="id">
+          </div>
+          </div>
+        </form>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="btnclose" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="guardar" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

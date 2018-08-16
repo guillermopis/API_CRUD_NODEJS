@@ -1,0 +1,33 @@
+<h1 align="center">PARTICIPANTES</H1>
+<table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Id</th>
+      <th scope="col">Alumno</th>
+      <th scope="col">Carnet</th>
+      <th scope="col">Ciclo</th>
+      <th scope="col">Facultad</th>
+      <th scope="col">Evento</th>
+      <th scope="col">Categoria</th>
+      <th scope="col">Opciones</th>
+    </tr>
+  </thead>
+  <tbody>
+  for alumno in data.data
+    <tr>
+      <th scope="row"></th>
+      <td>#{alumno.id}</td>
+      <td>#{alumno.nombre}</td>
+      <td>#{alumno.carnet}</td>
+      <td>#{alumno.ciclo}</td>
+      <td>#{alumno.facultad}</td>
+      <td>#{alumno.evento}</td>
+      <td>#{alumno.categoria}</td>
+      <td>
+        <button type="button" class="btn btn-primary" onClick="actualizar(#{alumno.id})">Editar</button>
+        <button type="button" class="btn btn-primary" onClick="eliminar(#{alumno.id})">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>  
+</table>
